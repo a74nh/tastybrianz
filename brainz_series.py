@@ -125,7 +125,7 @@ class Series:
 		t=self.table
 		if self.counts:
 			t=t+[["totals","","",""]+self.counts]
-		return tabulate(t,tablefmt=tablefmt,headers=self.headers)
+		return f'{self.data["name"]}\n{tabulate(t,tablefmt=tablefmt,headers=self.headers)}'
 
 def load_config():
 	with open(id_file, 'r') as f:

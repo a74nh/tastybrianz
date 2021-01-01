@@ -26,6 +26,7 @@ brainz_series.py -t 30 rs2020 rs2012
 ```
 
 ```
+Rolling Stone: 500 Greatest Albums of All Time: 2020 edition
 | num    | title                          | artist                         | year   | rs2012   |
 |--------+--------------------------------+--------------------------------+--------+----------|
 | 1      | What’s Going On                | Marvin Gaye                    | 1971   | ^5       |
