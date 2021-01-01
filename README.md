@@ -39,3 +39,13 @@ Rolling Stone: 500 Greatest Albums of All Time: 2020 edition
 | 8      | Purple Rain                    | Prince and The Revolution      | 1984   | ^68      |
 etc....
 ```
+
+
+# Using as module
+
+```
+import brainz_series
+t=brainz_series.generate_table("rs2020",["rs2012"],30)
+t.sort_by_column("year")
+print(t.tabulate("simple"))
+```
