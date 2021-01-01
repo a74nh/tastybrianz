@@ -153,7 +153,11 @@ def main():
 	base_list = generate_table(args.id,args.compare_ids,args.truncate,id_config)
 	if args.sort:
 		base_list.sort_by_column(args.sort)
-	print(base_list.tabulate(args.style))
+
+	try:
+		print(base_list.tabulate(args.style))
+	except (BrokenPipeError, IOError):
+		pass
 
 if __name__ == "__main__":
     main()
